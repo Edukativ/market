@@ -30,11 +30,11 @@ const ProductPage = () => {
             {loaded && products[id] && (  
                 <div className='wrapper'>
                     <div className='content_wrapper'>
-                        <span>{products[id].title}</span>
-                        <img src={products[id].image} alt="" className="rongar" />
-                        <span>Price: {products[id].price}$</span>
-                        <span>Description: {products[id].description}$</span>
-                        <Rating count={Math.round(products[id].rating.rate)}></Rating>
+                        <span>{products[id - 1].title}</span>
+                        <img src={products[id - 1].image} alt="" className="rongar" />
+                        <span>Price: {products[id - 1].price}$</span>
+                        <span>Description: {products[id - 1].description}$</span>
+                        <Rating count={Math.round(products[id - 1].rating.rate)}></Rating>
                     </div>
                     <button onClick={handleClick}>Назад</button>
                 </div>
