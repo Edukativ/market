@@ -1,0 +1,23 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    flex-direction: column;
+}
+
+.content_wrapper {
+    width: 500px;
+    height: 500px;
+    border: 1px solid #000;
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.rongar {
+    width: 200px;
+    height: 200px;
+}
